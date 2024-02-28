@@ -16,7 +16,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Live Site URL: [https://single-price-grid-component-cha-fem.netlify.app/] (https://single-price-grid-component-cha-fem.netlify.app/)
+- Live Site URL: https://single-price-grid-component-cha-fem.netlify.app/
 
 ## Author
 

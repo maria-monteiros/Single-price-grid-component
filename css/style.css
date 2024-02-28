@@ -1,0 +1,172 @@
+:root {
+    /* Primary Colors */
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+
+    /* Neutral Colors */
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+
+    /* Weights: 400, 700 */
+    --font-family: 'Karla';
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--light-gray);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    width: 20rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.box-one {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.box-one h1{
+    color: var(--cyan);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.test {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.parag {
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+
+.box-two {
+    background-color: var(--cyan);
+    padding: 2rem 1.5rem 1.5rem;
+    color:var(--light-gray);
+}
+
+.box-two h2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding-bottom: .8rem;
+}
+
+.value{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: var(--bright-yellow);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.box-three {
+    background-color: color-mix(in srgb, hsl(179, 62%, 43%), white 20%);
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.box-three h2 {
+    font-size: 1.1rem;
+    color:var(--light-gray);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.box-three ul{
+    list-style-type: none;
+    line-height: 1.2;
+}
+
+.box-three a {
+    text-decoration: none;
+    font-size: .9rem;
+    color:var(--light-gray);
+}
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--bright-yellow);
+    font-weight: 700;
+}
+
+@media screen and (min-width:48.25rem) {
+    .container {
+        width: 40rem;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-one {
+        grid-column: 2 span ;
+        padding: 2rem;
+    }
+
+    .test {
+        font-size: 1.1rem;
+    }
+
+    .box-one h1{
+        font-size: 1.5rem;
+    }
+
+    .parag {
+        font-size: 1rem;
+        padding-right: 3rem;
+    }
+
+    .box-two {
+        border-radius: 0 0 0 5px;
+        padding: 2rem ;
+    }
+
+    .box-three {
+        border-radius: 0 0 5px 0;
+        padding: 2rem ;
+    }
+}
